@@ -1,0 +1,35 @@
+-- CREATE TABLE products (
+--     id INT PRIMARY KEY,
+--     name VARCHAR(100),
+--     suppliar VARCHAR(100),
+--     price DECIMAL(10, 2),
+--     quantity INT,
+--     remarks VARCHAR(255)
+-- );
+
+-- INSERT INTO products (id, name, suppliar, price, quantity, remarks) VALUES
+-- (1, 'Laptop', 'Dell', 1200.00, 10, 'High-performance model'),
+-- (2, 'Smartphone', 'Samsung', 800.00, 25, 'Latest model'),
+-- (3, 'Monitor', 'LG', 300.00, 15, '4K resolution'),
+-- (4, 'Keyboard', 'Logitech', 50.00, 50, 'Mechanical keyboard'),
+-- (5, 'Mouse', 'Razer', 45.00, 40, 'Gaming mouse'),
+-- (6, 'Tablet', 'Apple', 600.00, 20, '10-inch screen'),
+-- (7, 'Headphones', 'Sony', 150.00, 30, 'Noise-canceling'),
+-- (8, 'Printer', 'HP', 200.00, 12, 'Wireless printer'),
+-- (9, 'Webcam', 'Logitech', 80.00, 35, '1080p resolution'),
+-- (10, 'Router', 'Netgear', 100.00, 20, 'Dual-band router'),
+-- (11, 'SSD', 'Samsung', 150.00, 40, '1TB SSD'),
+-- (12, 'External Hard Drive', 'Seagate', 110.00, 25, '2TB capacity'),
+-- (13, 'Graphics Card', 'NVIDIA', 700.00, 8, 'RTX 3080 model'),
+-- (14, 'Power Bank', 'Anker', 40.00, 60, '10,000mAh capacity'),
+-- (15, 'Smartwatch', 'Garmin', 250.00, 18, 'Fitness tracking features'),
+-- (16, 'Speakers', 'JBL', 120.00, 22, 'Bluetooth speakers'),
+-- (17, 'Camera', 'Canon', 500.00, 14, 'DSLR camera'),
+-- (18, 'Gaming Console', 'Sony', 500.00, 10, 'PlayStation 5'),
+-- (19, 'VR Headset', 'Oculus', 400.00, 12, 'Virtual reality system'),
+-- (20, 'Smart TV', 'Samsung', 900.00, 5, '55-inch Smart TV');
+
+-- SELECT DISTINCT name FROM products;
+-- SELECT COUNT(price) FROM products WHERE price =200;
+-- SELECT AVG(price) FROM products WHERE name = 'Laptop';
+-- SELECT SUM(price) FROM products WHERE name = "Graphics Card";
