@@ -1,0 +1,36 @@
+-- CREATE TABLE  Supplier1(
+-- SNO TEXT PRIMARY KEY,
+-- NAME TEXT,
+-- AGE INTEGER,
+-- CITY
+-- );
+-- INSERT INTO Supplier1(SNO,NAME,AGE,CITY) VALUES
+-- ("2","Ahakib",23,"Dubai"),
+-- ("3","Ahakib",23,"Dubai"),
+-- ("4","Ahakib",23,"Dubai"),
+-- ("5","Ahakib",23,"Dubai"),
+-- ("6","Ahakib",23,"Dubai");
+-- SELECT NAME,AGE FROM Supplier1;
+
+-- CREATE TABLE employees (
+--     employee_id INT PRIMARY KEY,
+--     first_name VARCHAR(50),
+--     last_name VARCHAR(50),
+--     email VARCHAR(100),
+--     hire_date DATE,
+--     salary DECIMAL(10, 2),
+--     department_id INT
+-- );
+
+
+
+
+-- INSERT INTO employees (employee_id, first_name, last_name, email, hire_date, salary, department_id)
+-- VALUES 
+-- (1, 'John', 'Doe', 'johndoe@example.com', '2023-01-15', 55000.00, 101),
+-- (2, 'Jane', 'Smith', 'janesmith@example.com', '2022-05-22', 60000.00, 102),
+-- (3, 'Michael', 'Brown', 'michaelbrown@example.com', '2021-11-03', 72000.00, 101),
+-- (4, 'Emily', 'Davis', 'emilydavis@example.com', '2020-07-18', 48000.00, 103),
+-- (5, 'David', 'Wilson', 'davidwilson@example.com', '2019-03-28', 53000.00, 102);
+
+SELECT * FROM employees WHERE first_name = 'John' OR email = 'emilydavis@example.';
