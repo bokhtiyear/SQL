@@ -1,0 +1,41 @@
+-- REATE TABLE nobel_prize_winners (
+--     id INT PRIMARY KEY,
+--     full_name VARCHAR(100),
+--     category VARCHAR(50),
+--     year INT,
+--     country VARCHAR(50),
+--     motivation TEXT
+-- );
+
+-- INSERT INTO nobel_prize_winners (id, full_name, category, year, country, motivation) VALUES
+-- (1, 'Marie Curie', 'Physics', 1903, 'France', 'For their joint research on the radiation phenomena.'),
+-- (2, 'Albert Einstein', 'Physics', 1921, 'Germany', 'For his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.'),
+-- (3, 'Martin Luther King Jr.', 'Peace', 1964, 'USA', 'For his non-violent struggle for civil rights for the Afro-American population.'),
+-- (4, 'Malala Yousafzai', 'Peace', 2014, 'Pakistan', 'For their struggle against the suppression of children and young people and for the right of all children to education.'),
+-- (5, 'Alexander Fleming', 'Medicine', 1945, 'United Kingdom', 'For the discovery of penicillin and its curative effect in various infectious diseases.'),
+-- (6, 'Dorothy Crowfoot Hodgkin', 'Chemistry', 1964, 'United Kingdom', 'For her determinations by X-ray techniques of the structures of important biochemical substances.'),
+-- (7, 'Nelson Mandela', 'Peace', 1993, 'South Africa', 'For their work for the peaceful termination of the apartheid regime, and for laying the foundations for a new democratic South Africa.'),
+-- (8, 'Mother Teresa', 'Peace', 1979C, 'India', 'For her work in bringing help to suffering humanity.'),
+-- (9, 'Toni Morrison', 'Literature', 1993, 'USA', 'Who in novels characterized by visionary force and poetic import, gives life to an essential aspect of American reality.'),
+-- (10, 'Ernest Hemingway', 'Literature', 1954, 'USA', 'For his mastery of the art of narrative, most recently demonstrated in The Old Man and the Sea.'),
+-- (11, 'Linus Pauling', 'Chemistry', 1954, 'USA', 'For his research into the nature of the chemical bond and its application to the elucidation of the structure of complex substances.'),
+-- (12, 'Barack Obama', 'Peace', 2009, 'USA', 'For his extraordinary efforts to strengthen international diplomacy and cooperation between peoples.'),
+-- (13, 'Jean-Paul Sartre', 'Literature', 1964, 'France', 'For his work which, rich in ideas and filled with the spirit of freedom and the quest for truth, has exerted a far-reaching influence on our age.'),
+-- (14, 'Ada Yonath', 'Chemistry', 2009, 'Israel', 'For her studies on the structure and function of the ribosome.'),
+-- (15, 'Amartya Sen', 'Economics', 1998, 'India', 'For his contributions to welfare economics.'),
+-- (16, 'Leonid Hurwicz', 'Economics', 2007, 'USA', 'For having laid the foundations of mechanism design theory.'),
+-- (17, 'Pablo Neruda', 'Literature', 1971, 'Chile', 'For a poetry that with the action of an elemental force brings alive a continent’s destiny and dreams.'),
+-- (18, 'Franco Modigliani', 'Economics', 1985, 'USA', 'For his pioneering analyses of saving and of financial markets.'),
+-- (19, 'Wangari Maathai', 'Peace', 2004, 'Kenya', 'For her contribution to sustainable development, democracy and peace.'),
+-- (20, 'Haruki Murakami', 'Literature', 2021, 'Japan', 'For his imaginative fiction that blends fantasy and realism in a unique style.');
+-- SELECT * FROM nobel_prize_winners
+-- ORDER BY year ASC;
+-- ORDER BY year DESC;
+-- SELECT category AS "department",
+-- COUNT(*) AS "quatity"
+-- FROM nobel_prize_winners  
+-- GROUP BY category;
+-- SELECT country  AS "Naition",
+-- COUNT(*) AS "Times"
+-- FROM nobel_prize_winners
+-- GROUP BY country;
