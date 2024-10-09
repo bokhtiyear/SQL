@@ -1,0 +1,58 @@
+-- CREATE TABLE Foodcart (
+--     NAME VARCHAR(255),
+--     NEIGHBOURHOOD VARCHAR(255),
+--     CUISINE VARCHAR(255),
+--     REVIEW DECIMAL(2,1),
+--     PRICE VARCHAR(10),
+--     HEALTH CHAR(1)
+-- );
+-- INSERT INTO Foodcart (NAME, NEIGHBOURHOOD, CUISINE, REVIEW, PRICE, HEALTH) VALUES
+
+-- ('Peter', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A'),
+
+-- ('Jongro', 'Midtown', 'Korean', 3.5, '$$', 'A'),
+
+-- ('Pocha', 'Midtown', 'Pizza', 4, '$$$', 'B'),
+
+-- ('Lighthouse', 'Queens', 'Chinese', 3.9, '$', 'A'),
+
+-- ('Minca', 'Downtown', 'American', 4.6, '$$$', ''),
+
+-- ('Marea', 'Chinatown', 'Chinese', 3.0, '$$', ''),
+
+-- ('Dirty Candy', 'Uptown', 'Italian', 4.9, '$$$$', 'B'),
+
+-- ('Di Fara Pizza', 'Brooklyn', 'Pizza', 3.8, '$$$', 'A'),
+
+-- ('Golden Unicorn', 'Uptown', 'Italian', 3.8, '$$', 'A');
+
+-- SELECT * FROM Foodcart
+-- WHERE NEIGHBOURHOOD IN ('Brooklyn','Downtown','Uptown');
+
+
+
+
+CREATE TABLE Customer (
+    CustomerID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    Email VARCHAR(255),
+    PhoneNumber VARCHAR(15),
+    Address VARCHAR(255),
+    City VARCHAR(100),
+    State VARCHAR(100),
+    ZipCode VARCHAR(10),
+    JoinDate DATE
+);
+INSERT INTO Customer (FirstName, LastName, Email, PhoneNumber, Address, City, State, ZipCode, JoinDate)
+VALUES 
+('John', 'Doe', 'john.doe@example.com', '123-456-7890', '123 Elm Street', 'New York', 'NY', '10001', '2024-10-09'),
+('Jane', 'Smith', 'jane.smith@example.com', '987-654-3210', '456 Maple Avenue', 'Los Angeles', 'CA', '90001', '2024-10-09'),
+('Michael', 'Johnson', 'michael.johnson@example.com', '555-123-4567', '789 Oak Street', 'Chicago', 'IL', '60601', '2024-10-08'),
+('Emily', 'Davis', 'emily.davis@example.com', '444-555-6666', '101 Pine Road', 'Houston', 'TX', '77001', '2024-10-07'),
+('Robert', 'Miller', 'robert.miller@example.com', '111-222-3333', '202 Birch Lane', 'Miami', 'FL', '33101', '2024-10-06'),
+('Jessica', 'Taylor', 'jessica.taylor@example.com', '777-888-9999', '303 Cedar Avenue', 'Phoenix', 'AZ', '85001', '2024-10-05'),
+('David', 'Anderson', 'david.anderson@example.com', '222-333-4444', '404 Walnut Street', 'Philadelphia', 'PA', '19101', '2024-10-04'),
+('Sarah', 'Thomas', 'sarah.thomas@example.com', '666-777-8888', '505 Maple Street', 'Seattle', 'WA', '98101', '2024-10-03'),
+('William', 'Moore', 'william.moore@example.com', '999-111-2222', '606 Spruce Road', 'Denver', 'CO', '80201', '2024-10-02');
+SELECT * FROM Customer 
